@@ -1,0 +1,136 @@
+/* =============================================
+   Customers Page
+   ============================================= */
+
+.customer-profile-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.customer-profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.customer-profile-info {
+  flex: 1;
+}
+
+.customer-profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.customer-profile-company {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.customer-profile-meta {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-sm);
+}
+
+.customer-profile-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+
+.customer-stats {
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.customer-stat {
+  text-align: center;
+}
+
+.customer-stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.customer-stat-label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Customer Table */
+.customer-table .customer-name-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.customer-table-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.customer-contact-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.customer-contact-item {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.customer-spend-cell {
+  font-weight: 700;
+  color: var(--accent-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 768px) {
+  .customer-profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .customer-profile-meta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .customer-stats {
+    justify-content: center;
+  }
+}
